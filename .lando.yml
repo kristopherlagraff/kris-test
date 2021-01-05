@@ -1,0 +1,6 @@
+name: kris-test
+recipe: pantheon
+config:
+  framework: wordpress
+  site: kris-test
+  id: 860b7474-50a1-400b-a29e-5549c04a689f
