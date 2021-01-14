@@ -7,7 +7,7 @@
  *
  * https://pantheon.io/docs
  */
-/* New Comment */
+
 /**
  * Pantheon platform settings. Everything you need should already be set.
  */
