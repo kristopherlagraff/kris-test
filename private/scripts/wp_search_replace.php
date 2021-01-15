@@ -3,7 +3,7 @@ echo "Replacing previous environment urls with new environment urls... \n";
 
 if ( ! empty( $_ENV['PANTHEON_ENVIRONMENT'] ) ) {
   switch( $_ENV['PANTHEON_ENVIRONMENT'] ) {
-    case 'dev':
+    case 'live':
       passthru('wp search-replace "://dev-kris-test.pantheonsite.io" "://example.com" --all-tables ');
       break;
     case 'test':
