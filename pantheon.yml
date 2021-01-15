@@ -1,3 +1,10 @@
 # Put overrides to your pantheon.upstream.yml file here.
 # For more information, see: https://pantheon.io/docs/pantheon-yml/
 api_version: 1
+
+workflows:
+  clone_database:
+    after:
+      - type: webphp
+        description: Search and replace url in database
+        script: private/scripts/search-replace-example.php
