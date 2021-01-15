@@ -1,10 +1,10 @@
-## Put overrides to your pantheon.upstream.yml file here.
+# Put overrides to your pantheon.upstream.yml file here.
 # For more information, see: https://pantheon.io/docs/pantheon-yml/
 api_version: 1
 # comment
 workflows:
-  deploy:
+  clone_database:
     after:
       - type: webphp
-        description: Seach and replace url in database
-        script: private/scripts/wp_user_list.php
+        description: Search and replace url in database
+        script: private/scripts/wp_search_replace.php
