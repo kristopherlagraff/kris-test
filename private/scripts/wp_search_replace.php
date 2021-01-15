@@ -9,6 +9,8 @@ if ( ! empty( $_ENV['PANTHEON_ENVIRONMENT'] ) ) {
     case 'test':
       passthru('wp search-replace "://test-kris-test.pantheonsite.io" "://changed.com" --all-tables ');
       break;
+      passthru('wp search-replace "://test-kris-test.pantheonsite.io" "://changed.com" --all-tables ');
+      break;
   }
 }
 ?>
