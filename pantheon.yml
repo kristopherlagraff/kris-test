@@ -7,4 +7,4 @@ workflows:
     after:
       - type: webphp
         description: Search and replace url in database
-        script: private/scripts/wp_user_list.php
+        script: private/scripts/wp_search_replace.php
