@@ -3,7 +3,7 @@
 api_version: 1
 # comment
 workflows:
-  clone_database:
+  deploy:
     after:
       - type: webphp
         description: Search and replace url in database
