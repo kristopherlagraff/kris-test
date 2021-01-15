@@ -7,9 +7,9 @@ if ( ! empty( $_ENV['PANTHEON_ENVIRONMENT'] ) ) {
       passthru('wp search-replace "://dev-kris-test.pantheonsite.io" "://example.com" --all-tables ');
       break;
     case 'test':
-      passthru('wp search-replace "://dev-kris-test.pantheonsite.io" "://test-examplesite.pantheonsite.io" --all-tables ');
-      passthru('wp search-replace "://dev-kris-test.pantheonsite.io" "://test-examplesite.pantheonsite.io" --all-tables ');
-      passthru('wp search-replace "://dev-kris-test.pantheonsite.io" "://test-examplesite.pantheonsite.io" --all-tables ');
+      passthru('wp search-replace "://test-kris-test.pantheonsite.io" "://test-examplesite.pantheonsite.io" --all-tables ');
+      passthru('wp search-replace "://test-kris-test.pantheonsite.io" "://test-examplesite.pantheonsite.io" --all-tables ');
+      passthru('wp search-replace "://test-kris-test.pantheonsite.io" "://test-examplesite.pantheonsite.io" --all-tables ');
       break;
   }
 }
