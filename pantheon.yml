@@ -3,8 +3,8 @@
 api_version: 1
 # comment
 workflows:
-  clone_database:
+  deploy:
     after:
       - type: webphp
         description: Search and replace url in database
-        script: private/scripts/wp_search_replace.php
+        script: private/scripts/wp_user_list.php
