@@ -6,5 +6,5 @@ workflows:
   clone_database:
     after:
       - type: webphp
-        description: Search and replace url in database
+        description: Seach and replace url in database
         script: private/scripts/wp_search_replace.php
