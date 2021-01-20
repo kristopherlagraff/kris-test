@@ -75,7 +75,7 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 
 /* That's all, stop editing! Happy Pressing. */
 
-
+define( 'QM_ENABLE_CAPS_PANEL', true );
 
 
 /** Absolute path to the WordPress directory. */
