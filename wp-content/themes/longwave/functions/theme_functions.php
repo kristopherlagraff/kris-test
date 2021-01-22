@@ -375,7 +375,7 @@ function aq_resize( $url, $width, $height = null, $crop = null, $single = true, 
 
 //Color Hex to RGB
 	function HexToRGB($hex) {
-		$hex = ereg_replace("#", "", $hex);
+		$hex = preg_replace("#", "", $hex);
 		$color = array();
  
 		if(strlen($hex) == 3) {
