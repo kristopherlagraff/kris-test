@@ -125,7 +125,10 @@ return register_widget('tb_longwavePosts');
 	Author URI: http://www.thunderbuddies.com
 
 -----------------------------------------------------------------------------------*/	
-	add_action( 'widgets_init', create_function('', 'return register_widget("tb_longwaveProjects");') );
+add_action ( 'widgets_init', 'tb_longwaveProjects' );
+function tb_longwaveProjects() {
+return register_widget('tb_longwaveProjects');
+}
 	class tb_longwaveProjects extends WP_Widget {
 		function tb_longwaveProjects() {
 			$widget_ops = array('classname' => 'tb_longwaveProjects', 'description' => 'A latest Projects widget.');
