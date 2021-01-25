@@ -11,7 +11,7 @@
 -----------------------------------------------------------------------------------*/	
 add_action ( 'widgets_init', 'tb_longwavePosts' );
 function tb_longwavePosts() {
-return register_widget(' Longwave Popular/Latest Posts');
+return register_widget('tb_longwavePosts');
 }
 	class tb_longwavePosts extends WP_Widget {
 		function tb_longwavePosts() {
