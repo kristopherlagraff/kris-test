@@ -9,7 +9,10 @@
 	Author URI: http://www.thunderbuddies.com
 
 -----------------------------------------------------------------------------------*/	
-	add_action( 'widgets_init', create_function('', 'return register_widget("tb_longwavePosts");') );
+add_action ( 'widgets_init', 'tb_longwavePosts' );
+function tb_longwavePosts() {
+return register_widget(' Longwave Popular/Latest Posts');
+}
 	class tb_longwavePosts extends WP_Widget {
 		function tb_longwavePosts() {
 			$widget_ops = array('classname' => 'tb_longwavePosts', 'description' => 'A popular/latest posts widget.');
