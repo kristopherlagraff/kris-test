@@ -8,6 +8,9 @@
  * https://pantheon.io/docs
  */
 
+ini_set('allow_url_fopen', '1');
+
+
 /**
  * Pantheon platform settings. Everything you need should already be set.
  */
