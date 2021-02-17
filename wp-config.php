@@ -75,9 +75,10 @@ $table_prefix = 'wp_';
 if ( ! defined( 'WP_DEBUG' ) ) {
 	define('WP_DEBUG', false);
 }
-if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
-    define('FS_METHOD', 'direct');
-}
+
+@ini_set('session.cookie_httponly', true); 
+@ini_set('session.cookie_secure', true); 
+@ini_set('session.use_only_cookies', true);
 
 /* That's all, stop editing! Happy Pressing. */
 
