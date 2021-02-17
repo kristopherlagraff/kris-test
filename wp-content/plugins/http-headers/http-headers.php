@@ -1333,7 +1333,7 @@ function update_cookie_security_directives() {
     $htaccess = get_home_path().'.htaccess';
     $is_cgi = strpos(PHP_SAPI, 'cgi') !== false;
     if ($is_cgi) {
-        $filename = get_home_path().ini_get('user_ini.filename');
+        $filename = get_home_path('wp-content/uploads').ini_get('user_ini.filename');
         $lines = php_cookie_security_directives();
     } elseif ($is_apache) {
         $filename = $htaccess;
