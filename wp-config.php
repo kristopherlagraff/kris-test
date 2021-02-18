@@ -76,9 +76,7 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 	define('WP_DEBUG', false);
 }
 
-@ini_set('session.cookie_httponly', true); 
-@ini_set('session.cookie_secure', true); 
-@ini_set('session.use_only_cookies', true);
+define( 'UPLOADS', 'wp-content/uploads' );
 
 /* That's all, stop editing! Happy Pressing. */
 
