@@ -721,3 +721,8 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+add_action('wp_logout','ps_redirect_after_logout');
+function ps_redirect_after_logout(){
+         wp_redirect( 'https://google.com' );
+         exit();
+}
