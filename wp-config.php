@@ -73,39 +73,6 @@ $table_prefix = 'wp_';
  * "true" in dev, but false in test and live.
  */
 
-define( 'WP_ALLOW_MULTISITE', true );
-define( 'MULTISITE', true );
-define( 'SUBDOMAIN_INSTALL', false );
-$base = '/';
-//define( 'DOMAIN_CURRENT_SITE', 'dev-kris-test.pantheonsite.io' );
-define( 'PATH_CURRENT_SITE', '/' );
-define( 'SITE_ID_CURRENT_SITE', 1 );
-define( 'BLOG_ID_CURRENT_SITE', 1 );
-
-
-/**
- * Define DOMAIN_CURRENT_SITE conditionally.
- */
-if ( ! empty( $_ENV['PANTHEON_ENVIRONMENT'] ) ) {
-	switch( $_ENV['PANTHEON_ENVIRONMENT'] ) {
-	  case 'live':
-		// Value should be the primary domain for the Site Network.
-		define( 'DOMAIN_CURRENT_SITE', 'live-kris-test.pantheonsite.io' );
-		// Once you map a domain to Live, you can change DOMAIN_CURRENT_SITE
-		// define( 'DOMAIN_CURRENT_SITE', 'example-network.com' );
-		break;
-	  case 'test':
-		define( 'DOMAIN_CURRENT_SITE', 'test-kris-test.pantheonsite.io' );
-		break;
-	  case 'dev':
-		define( 'DOMAIN_CURRENT_SITE', 'dev-kris-test.pantheonsite.io' );
-		break;
-	  default:
-		# Catch-all to accommodate default naming for multi-dev environments.
-		define( 'DOMAIN_CURRENT_SITE', $_ENV['PANTHEON_ENVIRONMENT'] . '-' . $_ENV['PANTHEON_SITE_NAME'] . '.pantheonsite.io' );
-		break;
-	  }
-  }
 
 
 if ( ! defined( 'WP_DEBUG' ) ) {
