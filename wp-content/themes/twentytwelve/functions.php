@@ -1,11 +1,4 @@
 <?php
-
-add_action(‘wp_logout’,’auto_redirect_external_after_logout’);
-function auto_redirect_external_after_logout(){
-wp_redirect( ‘https://atlanticwebfitters.com’ );
-exit();
-}
-
 /**
  * Twenty Twelve functions and definitions
  *
