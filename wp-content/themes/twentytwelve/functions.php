@@ -721,3 +721,8 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+
+function better_search_replace_cap_override() {
+    return 'manage_options';
+}
+add_filter( 'bsr_capability', 'better_search_replace_cap_override' );
