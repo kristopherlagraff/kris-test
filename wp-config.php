@@ -72,7 +72,7 @@ $table_prefix = 'wp_';
  * You may want to examine $_ENV['PANTHEON_ENVIRONMENT'] to set this to be
  * "true" in dev, but false in test and live.
  */
-if (!isset($_SERVER['PHP_AUTH_USER'])) {
+/*if (!isset($_SERVER['PHP_AUTH_USER'])) {
     header('WWW-Authenticate: Basic realm="My Realm"');
     header('HTTP/1.0 401 Unauthorized');
     echo 'Text to send if user hits Cancel button';
@@ -82,7 +82,7 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
     echo "<p>You entered {$_SERVER['PHP_AUTH_PW']} as your password.</p>";
 }
 
-
+*/
 if ( ! defined( 'WP_DEBUG' ) ) {
 	define('WP_DEBUG', false);
 }
